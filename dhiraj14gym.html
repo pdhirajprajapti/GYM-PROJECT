@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM</title>
+    <STYLE>
+        .MAIN::before {
+            content: "";
+            position: absolute;
+            background-image: url('image/1.jpeg');
+            background-SIZE: COVER;
+            width: 100VW;
+            HEIGHT: 100VH;
+            top:0px;
+            z-index: -1;
+            opacity:0.9;
+        }
+
+        .CONT {
+            BORDER: 2Px solid rgb(231, 186, 186);
+            POSITION: RELATIVE;
+            position: sticky;
+            top:0px;
+            MARGIN: 10PX;
+            PADDING: 5PX;
+            color: WHITE;
+            border-radius: 5px;
+            background-color: rgb(117, 133, 145);
+        }
+
+        .LEFT {
+            POSITION: ABSOLUTE;
+            LEFT: 2PX;
+            DISPLAY: inline-block;
+        }
+
+        .MID {
+            DISPLAY:BLOCK;
+            WIDTH: 600PX;
+            MARGIN: AUTO;
+            font-size: 25px;
+
+        }
+
+        .RIGHT {
+            DISPLAY: inline-block;
+            position: absolute;
+            RIGHT: 2PX;
+            TOP: 3PX;
+            font-size: 40px;
+        }
+
+        .BTN {
+            border-radius: 10px;
+            font-size: 20px;
+            padding: 5px 20px;
+        }
+
+        .NAVEBAR LI A:HOVER {
+            COLOR: GREEN;
+        }
+
+        .NAVEBAR LI {
+            DISPLAY: inline-block;
+
+        }
+
+        .NAVEBAR LI A {
+            COLOR: WHITE;
+            PADDING: 5PX;
+            font-weight: bold;
+        }
+
+        .CONT2 {
+
+            width: 50%;
+            margin: 100px auto;
+            ;
+            border-radius: 5PX;
+            border-radius: 4px;
+        }
+
+        .FORMGRP {
+            DISPLAY: BLOCK;
+            WIDTH: 700PX;
+            margin: 20PX AUTO;
+
+            padding: 10px;
+            font-size: 40px;
+        }
+
+        .BTN2 {
+            DISPLAY: BLOCK;
+            WIDTH: 500px;
+            MARGIN: 30PX AUTO;
+            padding: 20px;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        form>H1 {
+            text-align: center;
+            COLOR: rgb(245, 250, 247);
+            font-weight: bold;
+        }
+
+        input[type] {
+            padding: 20px;
+            width: 600px;
+            border: 2px solid red;
+            border-radius: 20px;
+            background-color: rgb(157, 182, 174);
+            font-size: 20px;
+            text-align: center;
+        }
+    </STYLE>
+</head>
+
+<body CLASS="MAIN">
+    <header CLASS="CONT">
+        <DIV CLASS="LEFT">
+            <img SRC="image/1.jpeg" WIDTH="80PX">
+        </DIV>
+        <DIV CLASS="MID">
+            <UL CLASS="NAVEBAR">
+                <LI><A HREF="">HOME</A></LI>
+                <LI><A HREF="">ABOUT US</A></LI>
+                <LI><A HREF="">FITNESS</A></LI>
+                <LI><A HREF="">CONTACT US</A></LI>
+            </UL>
+        </DIV>
+        <DIV CLASS="RIGHT">
+            <BUTTON CLASS="BTN">CHAT WITH US</BUTTON>
+
+            <BUTTON CLASS="BTN">EMAIL WITH US</BUTTON>
+
+        </DIV>
+    </header>
+    <FORM CLASS="CONT2" ACTION="NOACTION.PHP">
+        <H1>FILL YOUR FORM</H1>
+        <DIV CLASS="FORMGRP"><INPUT TYPE="TEXT" PLACEHOLDER="ENTER YOUR NAME"></DIV>
+        <DIV CLASS="FORMGRP"> <INPUT TYPE="date" PLACEHOLDER="ENTER YOUR DATE OF BIRTH"></DIV>
+        <DIV CLASS="FORMGRP"><INPUT TYPE="NUMBER" PLACEHOLDER="SELECT YOUR AGE"></DIV>
+        <DIV CLASS="FORMGRP"> <INPUT TYPE="GENDER" PLACEHOLDER="ENTER YOUR GENDER"></DIV>
+        <DIV CLASS="FORMGRP"><INPUT TYPE="EMAIL ID" PLACEHOLDER="ENTER YOUR EMAIL ID"></DIV>
+        <button class="BTN2" PLACEHOLDER="SUBMIT">SUBMIT</button>
+    </FORM>
+</body>
+
+</html>
